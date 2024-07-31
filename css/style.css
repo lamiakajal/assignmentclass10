@@ -1,0 +1,302 @@
+/* google fonts linking here */
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* ************************
+****    Global CSS     ****
+***************************/
+*{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, h6, p,{
+    margin: 0;
+    padding: 0;
+}
+p{
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #999999;
+}
+body{
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+}
+ul{
+    margin: 0;
+    padding: 0;
+}
+a, a:hover{
+    text-decoration: none;
+}
+
+/* ************
+HEADER START
+*************** */
+header{
+    width: 100%;
+    height: 90vh;
+    background: url(../images/banner.png) center center no-repeat;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+header .navbar-brand img{
+    width: 135px;
+    margin-top: 10px;
+}
+.nav-item{
+    margin-right: 15px;
+}
+
+.nav-link{
+    color: white;
+    position: relative;
+}
+.nav-link::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #008ed6;
+    transition: .4s ease-in-out;
+}
+.nav-link::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0;
+    height: 2px;
+    background-color: #008ed6;
+    transition: .4s ease-in-out;
+}
+.nav-link:hover{
+    color: white;
+}
+.nav-link:hover::before{
+    width: 46%;
+}
+.nav-link:hover::after{
+    width: 46%;
+}
+.cus-hight{
+    height: 80vh;
+}
+header h5{
+    font-size: 14px;
+    font-weight: 700;
+    color: #008ed6;
+    text-transform: uppercase;
+}
+header h1{
+    font-size: 50px;
+    line-height: 60px;
+    color: white;
+    font-weight: 700;
+}
+header p{
+    color: white;
+    line-height: 26px;
+    margin-top: 20px;
+    margin-bottom: 58px;
+}
+header .btn-download{
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    background-color: #008ed6;
+    border: 1px solid #008ed6;
+    transition: 0.6s;
+    font-weight: 600;
+}
+header .btn-download:hover{
+    color: rgb(255, 255, 255);
+    background-color: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.6s;
+}
+header .view-btn{
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: transparent;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.6s;
+    margin-left: 15px;
+    font-weight: 600;
+}
+header .view-btn:hover{
+    background-color: #008ed6;
+    border: 1px solid #008ed6;
+    color: rgb(255, 255, 255);
+    transition: 0.6s;
+}
+/* ************
+HEADER END
+*************** */
+
+/* *********************
+FEATURE SECTION START
+************************ */
+.feature-section{
+    padding: 70px 0px;
+    border-bottom: 1px solid rgb(215, 215, 215);
+}
+.heading{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.heading h5{
+    color: #008ed6;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-style: uppercase;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+.heading h1{
+    font-size: 35px;
+    font-weight: 700;
+    text-transform: capitalize;
+    margin: 8px 0px;
+}
+.feature-section .heading span{
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin: auto;
+    margin-top: 20px; 
+    position: relative;
+    background-color: #008ed6;
+}
+.feature-section .heading span::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    background-color: #008ed6;
+    top: 0;
+    transition: .4s all ease-in-out;
+}
+.feature-section .heading span::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    height: 100%;
+    width: 0;
+    background-color: #008ed6;
+    top: 0;
+    transition: .4s all ease-in-out;
+}
+/* .feature-section:hover , .feature-section .heading span::before{
+    width: 48%;
+}
+.feature-section:hover , .feature-section .heading span::after{
+    width: 48%;
+} */
+.feature-content{
+    text-align: center;
+    padding-top: 50px;  
+}
+.feature-content i{
+    font-size: 30px;
+    color: #008ed6;
+    background-color: white !important;
+    width: 88px;
+    height: 88px;
+    border: 2px solid rgb(214, 214, 214);
+    border-radius: 50%;
+    padding-top: 26px;
+    margin-bottom: 20px;
+}
+.feature-content .icon h3{
+    font-size: 25px;
+    text-transform: capitalize;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+}
+.feature-content .icon p{
+    width: 86%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* *********************
+FEATURE SECTION END
+************************ */
+
+/* *********************
+DETAILS SECTION START
+************************ */
+.details-section{
+    padding: 70px 0px;   
+}
+.details-section .content{
+    padding-top: 55px;  
+}
+.details-section p{
+    padding-top: 25px;
+    width: 87%;
+    margin-bottom: 25px;
+}
+.details-section ul{
+    list-style: none;   
+}
+.details-section ul li{
+    display: flex;
+    margin-bottom: 10px;
+    align-items: center;
+    text-transform: capitalize;
+}
+.details-section ul li .l-icon{
+    width: 25px;
+    text-align: center;
+    margin-right: 5px;
+    color: #008ed6;
+}
+/* *********************
+DETAILS SECTION END
+************************ */
+
+/* *********************
+CUSTOMIZE SECTION START
+************************ */
+.customize-section{
+    background-color: #f2f2f2;
+    padding: 50px;
+}
+.customize-section .content{
+    margin-bottom: auto;
+    margin-top: auto;
+}
+.customize-section p{
+    padding-top: 25px;
+    width: 87%;
+}
+/* *********************
+CUSTOMIZE SECTION END
+************************ */
+
+/* *********************
+TESTIMONIAL SECTION START
+************************ */
+.testimonial-section{
+    background-image: url(../images/testimonial.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 70px 0px;
+}
+.testimonial-section h1{
+    color: white;
+    margin-top: 8px;
+}
+/* *********************
+TESTIMONIAL SECTION END
+************************ */
